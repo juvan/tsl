@@ -13,7 +13,7 @@ import { SettingsService, Settings} from '../shared/index';
 @Component({
   selector: 'app-settings',
   templateUrl: 'settings.component.html',
-  styleUrls: ['settings.component.scss'],
+  styleUrls: ['settings.component.css'],
    animations: [
         trigger('itemState', [
             state('visible', style({ 'opacity': '1' })),
