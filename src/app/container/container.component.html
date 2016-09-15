@@ -1,0 +1,30 @@
+<md-sidenav-layout fullscreen> 
+  <md-sidenav #sidenav> 
+    <md-card>
+       <md-card-header>
+          <img md-card-avatar src="../media/ball.png">
+          <md-card-title>TRIANGULO </md-card-title>
+          <md-card-subtitle>Soccer League 16/17</md-card-subtitle>
+      </md-card-header>  
+    </md-card>      
+    <md-nav-list>
+         <md-divider></md-divider>
+          <a md-list-item *ngFor="let option of navOptions" routerLink="{{option.link}}" (click)="sidenav.toggle()"> 
+            <p class="options"><i class="fa {{option.icon}}" aria-hidden="true"></i>   {{option.name}}</p>            
+          </a> 
+        <md-divider></md-divider>
+    </md-nav-list>
+  </md-sidenav> 
+  <md-toolbar color="primary">    
+    <button class="app-icon-button" (click)="sidenav.toggle()">
+      <i class="material-icons app-toolbar-menu">menu</i> 
+    </button>  
+    {{title}}  
+    <span class="app-toolbar-filler"></span>
+    <span> <i class="fa fa-futbol-o" aria-hidden="true"></i> </span>
+  </md-toolbar> 
+  <div class="app-sidenav-content">
+    <ng-content></ng-content>
+  </div> 
+</md-sidenav-layout> 
+ 

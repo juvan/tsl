@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SideNavOption} from './container/index';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  navOptions: Array<SideNavOption>;  
+   
+  constructor() { 
+      console.log('AppComponent created.'); 
+      let rank = new SideNavOption('Ranking', 'fa-list-ol', '/users');
+      let settings = new SideNavOption('Premios', 'fa-gamepad', '/settings');
+      this.navOptions = [rank,settings]; 
+    } 
 }

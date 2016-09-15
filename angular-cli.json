@@ -7,7 +7,10 @@
     {
       "main": "src/main.ts",
       "tsconfig": "src/tsconfig.json",
-      "mobile": false
+      "mobile": false,
+      "styles" : [
+        "styles/styles.css"
+      ]
     }
   ],
   "addons": [],
@@ -25,7 +28,7 @@
   "defaults": {
     "prefix": "app",
     "sourceDir": "src",
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "lazyRoutePrefix": "+"
   }
