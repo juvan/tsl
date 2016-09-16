@@ -16,9 +16,7 @@ import { MdSidenavModule } from '@angular2-material/sidenav';
 import { MdIconModule,  MdIconRegistry } from '@angular2-material/icon';
 import {MdToolbarModule} from '@angular2-material/toolbar'; 
 import {MdGridListModule} from '@angular2-material/grid-list/grid-list';
-import {MdListModule} from '@angular2-material/list/list';
-
-import 'hammerjs' 
+import {MdListModule} from '@angular2-material/list/list'; 
 
 import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routes'; 
