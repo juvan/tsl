@@ -13,7 +13,7 @@ export class SettingsService {
   }
 
    getSettings (): Observable<Settings> {
-    return this.http.get('/assets/api/settings.json')
+    return this.http.get('assets/api/settings.json')
                     .map(this.extractData) 
                     .catch(this.handleError);
   }

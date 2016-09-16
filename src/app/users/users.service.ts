@@ -13,7 +13,7 @@ export class UsersService {
   }
 
   getUsers(): Observable<User[]> {  
-    return this.http.get('/assets/api/general.json')
+    return this.http.get('assets/api/general.json')
       .map(this.extractData)
       .catch(this.handleError); 
   }
