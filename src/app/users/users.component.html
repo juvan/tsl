@@ -4,7 +4,6 @@
     <md-card-title class="shadow">{{user.name}} ({{user.slug}})</md-card-title>
     <md-card-subtitle>   
       <p class="shadow"> {{user.points}} ptos. 
-        <span class="tab shadow"><i class="fa fa-money" aria-hidden="true"></i> {{user.value | currency:'EUR':true:'1.0-0'}} </span>
         <span class="tab shadow" [style.color]="user.wins > 0 ? '#80ff80': '#ff704d'"><i class="fa fa-trophy " aria-hidden="true"></i> {{user.wins}} </span>
         <span class="tab shadow" [style.color]="user.earn > 0 ? '#80ff80': '#ff704d'">  {{user.earn | currency:'EUR':true:'1.0-0'}}</span>
       </p>
